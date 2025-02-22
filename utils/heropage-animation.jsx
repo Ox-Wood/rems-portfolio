@@ -23,6 +23,7 @@ export const HeroTextAnimation = () => {
   
     gsap.fromTo(name, {
         xPercent: -140,
+        opacity: 0,
     }, {
         xPercent: 0,
         opacity: 1,
@@ -31,8 +32,10 @@ export const HeroTextAnimation = () => {
     })
     gsap.fromTo(niche, {
         yPercent: -140,
+        opacity: 0,
     }, {
         yPercent: 0,
+        opacity: 1,
         duration: 2,
         ease: "power2.inOut"
     })
