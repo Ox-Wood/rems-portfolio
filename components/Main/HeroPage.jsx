@@ -29,7 +29,7 @@ const HeroPage = () => {
                 </div>
               </div>
               <div className='overflow-hidden h-[160px] max-sm:flex justify-center' >
-                  <h1 id='niche' className='text-9xl max-sm:text-6xl font-Anton text-[#ff4655]' >Graphic Designer</h1>
+                  <h1 id='niche' className='text-9xl max-sm:text-[50px] font-Anton text-[#ff4655]' >Graphic Designer</h1>
               </div>
         </div>
         <div className='absolute w-[screen] h-[65vh] max-sm:w-[200vw] -z-10 opacity-15'>
