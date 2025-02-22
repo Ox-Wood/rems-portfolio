@@ -28,15 +28,15 @@ const RecentVideoProjects = () => {
                 </div>
                 <div className='w-full flex justify-between mt-6 max-sm:mt-0'>
                     <div className='flex items-center overflow-y-hidden max-sm:w-[30vw]' >
-                        <h1 id='recentprjct-tools1' className='uppercase font-[Anton] text-lg max-sm:text-sm text-[#F8F5E9]' >Tools used :</h1>
-                        <div className='ml-5 flex justify-between w-[6vw]'>
+                        <h1 id='recentprjct-tools1' className='uppercase font-[Anton] text-lg max-sm:text-[12px] text-[#F8F5E9]' >Tools used :</h1>
+                        <div className='ml-2 flex justify-between w-[6vw]'>
                             <Image id='recentprjct-tools2' src={"/tools/pr.png"} alt='premiere pro' width={40} height={40} />
                             <Image id='recentprjct-tools3' src={"/tools/ae.png"} alt='premiere pro' width={40} height={40} />
                         </div>
                     </div>
                     <div id='recentprjct-line2' className='w-[15vw] flex justify-center items-center' ><div className='w-full h-[1px] bg-white'></div><div className='w-[5px] h-[5px] bg-white rounded-full' ></div></div>
                     <div className='w-[15vw] max-sm:w-[35vw] flex xl:justify-center overflow-y-hidden' >
-                        <a id='recentprjct-link' href="#" className=' text-white flex justify-center items-center max-sm:text-sm' >view more edits <BiSolidRightTopArrowCircle className='ml-1' color='#F8F5E9' /></a>
+                        <a id='recentprjct-link' href="#" className=' text-white flex justify-center items-center max-sm:text-[12px]' >view more edits <BiSolidRightTopArrowCircle className='ml-1' color='#F8F5E9' /></a>
                     </div>
                 </div>
             </div>
