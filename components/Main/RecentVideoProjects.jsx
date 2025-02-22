@@ -43,7 +43,7 @@ const RecentVideoProjects = () => {
             {/** Video player */}
             <div className='w-[45vw] h-[60vh] max-sm:h-[30vh] max-sm:w-[90vw] flex justify-end items-center overflow-y-hidden overflow-x-hidden'>
                 <video id='recentprjct-video' autoPlay playsInline loop muted width={610} height={500} preload='none'>
-                    <source src='/video/Informational and Commercial Video of AFC.mp4' type='video/mp4'/>
+                    <source src='/video/video bg.mp4' type='video/mp4'/>
                 </video>
             </div>
         </div>
