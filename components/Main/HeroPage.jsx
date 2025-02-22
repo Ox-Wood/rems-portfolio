@@ -11,7 +11,7 @@ const HeroPage = () => {
   }, [])
 
   return (
-    <main className='w-full h-[65vh] max-sm:h-[70vh] flex max-sm:flex-col relative overflow-hidden' >
+    <main className='w-full h-[65vh] max-sm:h-[60vh] flex max-sm:flex-col relative overflow-hidden' >
         <div className='w-[60vw] max-sm:w-full h-full flex items-center justify-end max-sm:justify-center'>
           <div id='me-protrait' className='w-[30vw] max-sm:w-[70vw] max-sm:h-[40vh] max-sm:absolute top-16'>
               <Image 
@@ -29,7 +29,7 @@ const HeroPage = () => {
                 </div>
               </div>
               <div className='overflow-hidden h-[160px] max-sm:flex justify-center' >
-                  <h1 id='niche' className='text-9xl max-sm:text-[50px] font-Anton text-[#ff4655]' >Graphic Designer</h1>
+                  <h1 id='niche' className='text-9xl max-sm:text-[45px] font-Anton text-[#ff4655]' >Graphic Designer</h1>
               </div>
         </div>
         <div className='absolute w-[screen] h-[65vh] max-sm:w-[200vw] -z-10 opacity-15'>
