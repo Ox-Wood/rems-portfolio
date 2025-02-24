@@ -113,7 +113,7 @@ const ModernNavBar = () => {
             <div onClick={ModernNavBarAnimationCloser} id='navbar-closer' className='w-[30px] h-[30px] absolute -left-10 cursor-pointer' ></div>
             <h1 className='py-5 text-white' >what's more about me</h1>
         </div>
-        <div id='navbar-menu-container' className='overflow-hidden relative w-[17vw] h-[40vh]'>
+        <div id='navbar-menu-container' className='overflow-hidden relative w-[17vw]'>
             <div id='navbar-menu' className='w-[17vw] h-[40vh] absolute -top-96 bg-[#09122C]/30 backdrop-blur-md border-2 flex flex-col justify-evenly items-center border-white rounded-3xl text-white' > 
                 <a id='navtext1' className='px-9 py-3 uppercase text-sm rounded-full hover:bg-black duration-200' href="/">home</a>
                 <a id='navtext2' className='px-9 py-3 uppercase text-sm rounded-full hover:bg-black duration-200' href="#">niche</a>
