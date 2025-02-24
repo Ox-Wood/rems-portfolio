@@ -3,12 +3,12 @@ import HeroPage from "@/components/Main/HeroPage";
 import RecentVideoProjects from "@/components/Main/RecentVideoProjects";
 import RecentWorks from "@/components/Main/RecentWorks";
 import ToolsUsed from "@/components/Main/ToolsUsed";
-import NavBar from "@/components/NavBar";
+import ModernNavBar from "@/components/ModernNavBar";
 
 export default function Home() {
   return (
     <main>
-      <NavBar />
+      <ModernNavBar />
       <HeroPage />
       <ToolsUsed />
       <RecentWorks />
