@@ -3,11 +3,13 @@ import { PiSquaresFourBold } from "react-icons/pi";
 import { MdInsertPhoto } from "react-icons/md";
 import { FaVideo } from "react-icons/fa6";
 import ModernNavBar from '@/components/ModernNavBar';
+import MobileModernNavBar from '@/components/MobileModernNavBar';
 
 const page = () => {
   return (
     <main className='bg-[#F8F5E9]'>
-      <ModernNavBar />
+      <div className="max-sm:invisible max-sm:absolute -z-50" ><ModernNavBar /></div>
+      <div className="max-sm:opacity-100 absolute max-sm:top-5 max-sm:right-5 z-50 -top-96"><MobileModernNavBar /></div>
       <div className=' w-full h-screen max-sm:h-[100vh] flex justify-center '>
         <section className='w-[90vw] h-[95vh] mt-2 max-sm:h-[95vh] overflow-hidden xl:mt-5' >
           <div className='font-Anton mb-5 max-sm:mt-9' >

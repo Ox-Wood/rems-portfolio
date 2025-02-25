@@ -1,5 +1,4 @@
 "use client"
-import { ModernNavBarAnimation } from '@/utils/modern-navbar'
 import React from 'react'
 import gsap from 'gsap'
 import { useEffect } from 'react'
@@ -105,13 +104,13 @@ const ModernNavBar = () => {
   return (
     <header className='absolute top-5 right-5 z-50' >
         <div className='bg-[#09122C] rounded-3xl flex items-center overflow-hidden relative'>
-            <div onClick={ModernNavBarAnimation} className='w-[30px] h-[30px] mx-5 flex flex-col justify-around overflow-hidden cursor-pointer' >
+            <div onClick={ModernNavBarAnimation} className='w-[30px] h-[30px] mx-5 max-sm:my-3 flex flex-col justify-around overflow-hidden cursor-pointer' >
                 <div id='navbar-stick1' className='w-[30px] h-[3px] rounded-full bg-white'></div>
                 <div id='navbar-stick2' className='w-[30px] h-[3px] rounded-full bg-white'></div>
                 <div id='navbar-stick3' className='w-[30px] h-[3px] rounded-full bg-white'></div>
             </div>
             <div onClick={ModernNavBarAnimationCloser} id='navbar-closer' className='w-[30px] h-[30px] absolute -left-10 cursor-pointer' ></div>
-            <h1 className='py-5 text-white' >what's more about me</h1>
+            <h1 className='py-5 text-white max-sm:absolute max-sm:-z-50' >what's more about me</h1>
         </div>
         <div id='navbar-menu-container' className='overflow-hidden relative w-[17vw]'>
             <div id='navbar-menu' className='w-[17vw] h-[40vh] absolute -top-96 bg-[#09122C]/30 backdrop-blur-md border-2 flex flex-col justify-evenly items-center border-white rounded-3xl text-white' > 
