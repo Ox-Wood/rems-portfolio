@@ -1,0 +1,7 @@
+<div className={`xl:w-[41vw] absolute xl:-mt-11 xl:-ml-48 max-sm:w-[100vw] max-sm:-mt-7 max-sm:-ml-28`}>
+    <div className=' xl:w-[41vw]'>
+            <video autoPlay playsInline loop muted preload='none'>
+                <source src={source} type='video/mp4'/>
+            </video>
+     </div>
+</div>

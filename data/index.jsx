@@ -2,35 +2,35 @@ export const recentprojects = [{
 
     id: 1,
     source: "/latest-works/2.png",
-    size: "55vh",
-    mobile: "25vh"
+    size: "h-[40vh]",
+    mobile: "32vh"
 
 },{
 
     id: 2,
     source: "/latest-works/3.png",
-    size: "40vh",
+    size: "h-[30vh]",
     mobile: "25vh"
 
 },{
 
     id: 3,
     source: "/latest-works/4.jpg",
-    size: "55vh",
+    size: "h-[40vh]",
     mobile: "25vh"
 
 },{
 
     id: 4,
     source: "/latest-works/12.png",
-    size: "40vh",
+    size: "h-[45vh]",
     mobile: "15vh"
 
 },{
 
     id: 5,
     source: "/video/video bg.mp4",
-    size: "55vh",
-    mobile: "20vh"
+    size: "h-[20vh]",
+    mobile: "h-[20vh]"
 
 }]

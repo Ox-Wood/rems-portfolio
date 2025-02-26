@@ -32,15 +32,16 @@ const page = () => {
                 <div className='w-[90vw] max-sm:columns-2 columns-5 gap-4 space-y-2'>
                 
                 {recentprojects.map(({id, source, size, mobile}) => (
-                  <div key={id} className={`max-sm:w-[42vw] w-[17.5vw] border max-sm:h-[${mobile}] h-[${size}] rounded-xl break-inside-avoid overflow-hidden`}>
-                    <img 
-                      src={source}
-                      alt='image'/>
-                    <div className={`xl:w-[41vw] xl:-mt-11 xl:-ml-48 max-sm:w-[100vw] max-sm:-mt-7 max-sm:-ml-28`}>
-                      <video autoPlay playsInline loop muted preload='none'>
-                        <source src={source} type='video/mp4'/>
-                      </video>
-                    </div>
+                  <div key={id} className={`max-sm:w-[42vw] w-[17.5vw] ${size} border max-sm:h-[25vh] rounded-xl break-inside-avoid overflow-hidden `}>
+                      {source.slice(-3) === "png" || source.slice(-3) ==="jpg" ?(
+                        <img 
+                        src={source}
+                        alt='image'/>
+                      ) : (
+                        <video autoPlay playsInline loop muted preload='none'>
+                          <source src={source} type='video/mp4'/>
+                        </video>
+                      )}
                   </div>
                 ))}
 
