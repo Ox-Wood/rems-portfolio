@@ -31,15 +31,17 @@ const page = () => {
             <div className='relative w-full h-[76vh] max-sm:no-scrollbar overflow-x-hidden'>
                 <div className='w-[90vw] max-sm:columns-2 columns-5 gap-4 space-y-2'>
                 
-                {recentprojects.map(({id, source, size, mobile}) => (
-                  <div key={id} className={`max-sm:w-[42vw] w-[17.5vw] ${size} border max-sm:${mobile} rounded-xl break-inside-avoid overflow-hidden `}>
-                      {source.slice(-3) === "png" || source.slice(-3) ==="jpg" ?(
+                {recentprojects.map(({id, source, width}) => (
+                  <div key={id} className={`max-sm:w-[42vw] w-[17.5vw] border rounded-xl break-inside-avoid overflow-hidden `}>
+                      {source.slice(-3) === "png" || source.slice(-3) === "jpg" ?(
                         <img 
                         src={source}
-                        alt='image'/>
+                        alt='image'
+                        width={width}
+                        />
                       ) : (
                         <video autoPlay playsInline loop muted preload='none'>
-                          <source src={source} type='video/mp4'/>
+                            <source src={source} type='video/mp4'/>
                         </video>
                       )}
                   </div>
