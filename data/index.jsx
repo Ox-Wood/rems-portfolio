@@ -38,7 +38,11 @@ export const recentprojects = [{
     width: 900,
 },{
 
-    id: 8,
+    id: 9,
     source: "/latest-works/5.png",
     width: 900,
+},{
+
+    id: 10,
+    source: "/video/20012025 Feminine Wash Freshness All Day.mp4",
 }]
