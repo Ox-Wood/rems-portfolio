@@ -38,7 +38,7 @@ export const recentproject = () => {
     }, {
         yPercent: 0,
         opacity: 1,
-        duration: 2,
+        duration: 3,
         stagger: .2,
         ease: "power2.inOut",
         scrollTrigger: {

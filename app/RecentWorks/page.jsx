@@ -4,6 +4,7 @@ import { MdInsertPhoto } from "react-icons/md";
 import { FaVideo } from "react-icons/fa6";
 import ModernNavBar from '@/components/ModernNavBar';
 import MobileModernNavBar from '@/components/MobileModernNavBar';
+import { recentprojects } from '@/data';
 
 const page = () => {
   return (
@@ -28,22 +29,21 @@ const page = () => {
           </div>
           <div className='w-full'>
             <div className='relative w-full h-[76vh] max-sm:no-scrollbar overflow-x-hidden'>
-                <div className='w-[90vw] max-sm:columns-2 columns-5 gap-4 space-y-4'>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[25vh] h-[45vh] rounded-xl bg-white break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[35vh] h-[40vh] rounded-xl bg-black break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[35vh] h-[40vh] rounded-xl bg-black break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[25vh] h-[45vh] rounded-xl bg-white break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[35vh] h-[40vh] rounded-xl bg-black break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[35vh] h-[40vh] rounded-xl bg-black break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[35vh] h-[40vh] rounded-xl bg-black break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[35vh] h-[40vh] rounded-xl bg-black break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[35vh] h-[40vh] rounded-xl bg-black break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[25vh] h-[45vh] rounded-xl bg-white break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[25vh] h-[45vh] rounded-xl bg-white break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[25vh] h-[45vh] rounded-xl bg-white break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[25vh] h-[45vh] rounded-xl bg-white break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[25vh] h-[45vh] rounded-xl bg-white break-inside-avoid'></div>
-                    <div className='max-sm:w-[42vw] w-[17.5vw] max-sm:h-[25vh] h-[45vh] rounded-xl bg-white break-inside-avoid'></div>
+                <div className='w-[90vw] max-sm:columns-2 columns-5 gap-4 space-y-2'>
+                
+                {recentprojects.map(({id, source, size}) => (
+                  <div key={id} className={`max-sm:w-[42vw] w-[17.5vw] max-sm:h-[25vh] h-[${size}] rounded-xl break-inside-avoid overflow-hidden`}>
+                    <img 
+                      src={source}
+                      alt='image'/>
+                    <div className='xl:w-[41vw] xl:-mt-11 xl:-ml-48 max-sm:w-[100vw] max-sm:-mt-7 max-sm:-ml-28'>
+                      <video autoPlay playsInline loop muted preload='none'>
+                        <source src={source} type='video/mp4'/>
+                      </video>
+                    </div>
+                  </div>
+                ))}
+
                 </div>
             </div>
           </div>

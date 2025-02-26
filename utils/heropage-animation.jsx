@@ -22,7 +22,7 @@ export const HeroTextAnimation = () => {
     const niche = document.getElementById('niche')
   
     gsap.fromTo(name, {
-        xPercent: -140,
+        xPercent: -90,
         opacity: 0,
     }, {
         xPercent: 0,
