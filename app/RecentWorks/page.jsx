@@ -16,7 +16,7 @@ const page = () => {
           <div className='font-Anton mb-5 max-sm:mt-9' >
               <h1 className='text-6xl max-sm:text-4xl text-[#ff4655]'>My Recent Works</h1>
           </div>
-          <div className='w-[22vw] h-[8vh] flex justify-between max-sm:w-[75vw]'>
+        {/**   <div className='w-[22vw] h-[8vh] flex justify-between max-sm:w-[75vw]'>
               <div className='w-[50px] h-[50px] max-sm:w-[40px] max-sm:h-[40px] flex justify-center items-center border border-[#09122C] text-lg rounded-xl text-[#09122C]' ><PiSquaresFourBold /></div>
               <div className='h-[50px] max-sm:h-[40px] px-4 max-sm:px-2 flex justify-center items-center border border-[#09122C] rounded-xl text-[#09122C]' >
                 <div className='w-[30px] h-[30px] max-sm:w-[40px] max-sm:h-[40px] flex justify-center items-center text-lg'><MdInsertPhoto  /> </div>
@@ -26,7 +26,7 @@ const page = () => {
                 <div className='w-[30px] h-[30px] max-sm:w-[40px] max-sm:h-[40px] flex justify-center items-center text-lg'><FaVideo  /> </div>
                 <h1 className='max-sm:text-sm' >VIDEOS</h1>
               </div>
-          </div>
+          </div> */}
           <div className='w-full'>
             <div className='relative w-full h-[76vh] max-sm:no-scrollbar overflow-x-hidden'>
                 <div className='w-[90vw] max-sm:columns-2 columns-5 gap-4 space-y-2'>
