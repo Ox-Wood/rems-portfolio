@@ -36,4 +36,9 @@ export const recentprojects = [{
     id: 8,
     source: "/latest-works/1.png",
     width: 900,
+},{
+
+    id: 8,
+    source: "/latest-works/5.png",
+    width: 900,
 }]
