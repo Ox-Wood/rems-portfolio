@@ -23,4 +23,17 @@ export const recentprojects = [{
 
     id: 5,
     source: "/video/video bg.mp4",
+},{
+
+    id: 6,
+    source: "/video/09012025 brew the mood.mp4",
+},{
+
+    id: 7,
+    source: "/video/13012025 Why FC Bio will make your day better.mp4",
+},{
+
+    id: 8,
+    source: "/latest-works/1.png",
+    width: 900,
 }]

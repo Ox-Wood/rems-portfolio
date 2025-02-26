@@ -32,7 +32,7 @@ const page = () => {
                 <div className='w-[90vw] max-sm:columns-2 columns-5 gap-4 space-y-2'>
                 
                 {recentprojects.map(({id, source, width}) => (
-                  <div key={id} className={`max-sm:w-[42vw] w-[17.5vw] border rounded-xl break-inside-avoid overflow-hidden `}>
+                  <div key={id} className={`max-sm:w-[42vw] w-[17.5vw] border rounded-xl break-inside-avoid overflow-hidden`}>
                       {source.slice(-3) === "png" || source.slice(-3) === "jpg" ?(
                         <img 
                         src={source}
