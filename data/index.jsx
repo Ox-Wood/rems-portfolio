@@ -3,28 +3,28 @@ export const recentprojects = [{
     id: 1,
     source: "/latest-works/2.png",
     size: "h-[40vh]",
-    mobile: "32vh"
+    mobile: "h-[25vh]"
 
 },{
 
     id: 2,
     source: "/latest-works/3.png",
     size: "h-[30vh]",
-    mobile: "25vh"
+    mobile: "h-[15vh]"
 
 },{
 
     id: 3,
     source: "/latest-works/4.jpg",
     size: "h-[40vh]",
-    mobile: "25vh"
+    mobile: "h-[25vh]"
 
 },{
 
     id: 4,
     source: "/latest-works/12.png",
     size: "h-[45vh]",
-    mobile: "15vh"
+    mobile: "h-[15vh]"
 
 },{
 
